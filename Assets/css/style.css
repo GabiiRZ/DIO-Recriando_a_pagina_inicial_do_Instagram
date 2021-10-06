@@ -1,0 +1,31 @@
+body { margin: 0; }
+
+.row { justify-content: center; display: flex; width: 100vw; height: 100vh; background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%); }
+.row .container { margin: 20px; }
+.row .container .login { width: 380px; border-radius: 15px; background: #fff; height: auto; border: 1px #D4D4D4 solid; text-align: center; justify-content: center; margin-top: 20px; }
+.row .container .login img { margin: 50px 0px 30px; }
+.row .container .login .dados label { text-align: center; display: flex; justify-content: center; }
+.row .container .login .dados label input { width: 80%; margin-bottom: 10px; padding: 10px; border: 1px #8A8A8A solid; border-radius: 5px; }
+.row .container .login .dados label input::placeholder { color: #CCCCCC; }
+.row .container .login .dados #enviar { width: 80%; padding: 10px; background: rgba(0, 149, 246, 0.3); border: none; border-radius: 5px; text-align: center; justify-content: center; margin: 15px 0px; cursor: not-allowed; }
+.row .container .login .risco { position: relative; display: inline-block; color: #000; font-size: 1.2rem; margin: 8px; width: 50%; margin-bottom: 20px; }
+.row .container .login .risco::before, .row .container .login .risco::after { content: ""; position: absolute; top: 0.65em; width: 3em; height: 0.05em; background-color: #000; left: -1.25em; }
+.row .container .login .risco::after { left: initial; right: -1.25em; }
+.row .container .login a { color: #3b5998; display: block; text-decoration: none; margin-bottom: 20px; }
+.row .container .login a .fa-facebook { background-color: #3b5998; width: 25px; line-height: 25px; border-radius: 50%; color: #fff; }
+.row .container .login a .fa-facebook:hover { background-color: #4582F1; }
+.row .container .login .cadastro a, .row .container .login .cadastro p { display: inline-flex; line-height: 50px; margin: 0px; }
+.row .container .baixar { width: 380px; height: auto; text-align: center; justify-content: center; margin-top: 20px; }
+.row .container .baixar img { width: 49%; cursor: pointer; }
+
+@media (min-height: 768px) and (max-width: 1024px) { .container { width: 100%; }
+  .container .login { width: 100% !important; margin-top: 40px !important; }
+  .container .login img { width: 40%; }
+  .container .login input { line-height: 100px; font-size: 40px; margin-bottom: 50px !important; }
+  .container .login #enviar { line-height: 100px; font-size: 40px; }
+  .container .login .risco { font-size: 4.2rem !important; }
+  .container .login a { font-size: 40px; margin-bottom: 40px !important; }
+  .container .login a .fa-facebook { width: 70px !important; line-height: 70px !important; }
+  .container .login p { font-size: 40px; }
+  .container .login .cadastro a, .container .login .cadastro p { display: inline-flex; line-height: 100px !important; margin: 0px !important; }
+  .container .baixar { width: 100% !important; } }

@@ -1,0 +1,154 @@
+body {
+	margin: 0;
+}
+.row{
+	justify-content: center;
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+	.container{
+		margin: 20px;
+		.login{
+			width: 380px;
+			border-radius: 15px;
+			background: #fff;
+			height: auto;
+			border: 1px #D4D4D4 solid;
+			text-align: center;
+			justify-content: center;
+			margin-top: 20px;
+			img{
+				margin: 50px 0px 30px;
+			}
+			.dados{
+				label{
+					text-align: center;
+					display: flex;
+					justify-content: center;
+					input{
+						width: 80%;
+						margin-bottom: 10px;
+						padding: 10px;
+						border: 1px #8A8A8A solid;
+						border-radius: 5px;
+						&::placeholder{
+							color: #CCCCCC;
+						}
+					}
+				}
+				#enviar{
+					width: 80%;
+					padding: 10px;
+					background: rgba(0,149,246,.3);
+					border: none;
+					border-radius: 5px;
+					text-align: center;
+					justify-content: center;
+					margin: 15px 0px;
+					cursor: not-allowed;
+				}
+			}
+			.risco {
+				position: relative;
+				display: inline-block;
+				color: #000;
+				font-size: 1.2rem;
+				margin: 8px;
+				width: 50%;
+				margin-bottom: 20px;
+			}
+			.risco::before,.risco::after {
+				content: "";
+				position: absolute;
+				top: 0.65em;
+				width: 3em;
+				height: 0.05em;
+				background-color: #000;
+				left: -1.25em;
+			}
+			.risco::after {
+				left: initial;
+				right: -1.25em;
+			}
+			a{
+				color: #3b5998;
+				display:block;
+				text-decoration: none;
+				margin-bottom: 20px;
+				.fa-facebook{
+					background-color: #3b5998;
+					width: 25px;
+					line-height: 25px;
+					border-radius: 50%;
+					color: #fff;
+					&:hover{
+						background-color: #4582F1;
+					}	
+				}
+			}
+			.cadastro{
+				a, p{
+					display: inline-flex;
+					line-height: 50px;
+					margin: 0px;
+				}
+			}
+		}
+		.baixar{
+			width: 380px;
+			height: auto;
+			text-align: center;
+			justify-content: center;
+			margin-top: 20px;
+			img{
+				width: 49%;
+				cursor: pointer;
+			}
+		}
+	}
+}
+@media (min-height: 768px) and (max-width: 1024px) {
+	.container{
+		width: 100%;
+		.login{
+			width: 100% !important;
+			margin-top: 40px !important;
+			img{
+				width: 40%;
+			}
+			input{
+				line-height: 100px;
+				font-size: 40px;
+				margin-bottom: 50px !important;
+			}
+			#enviar{
+				line-height: 100px;
+				font-size: 40px;
+			}
+			.risco{
+				font-size: 4.2rem !important;
+			}
+			a{
+				font-size: 40px;
+				margin-bottom: 40px !important;
+				.fa-facebook {
+					width: 70px !important;
+					line-height: 70px !important;
+				}
+			}
+			p{font-size: 40px;}
+			.cadastro{
+				a, p{
+					display: inline-flex;
+					line-height: 100px !important;
+					margin: 0px !important;
+				}
+			}
+		}
+		.baixar{
+			width: 100% !important;
+
+		}
+	}
+}
